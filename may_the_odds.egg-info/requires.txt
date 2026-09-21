@@ -1,0 +1,8 @@
+faker
+adventurelib
+rich
+
+[dev]
+pytest
+ruff
+mypy

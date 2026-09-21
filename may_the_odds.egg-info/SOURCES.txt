@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+may_the_odds.egg-info/PKG-INFO
+may_the_odds.egg-info/SOURCES.txt
+may_the_odds.egg-info/dependency_links.txt
+may_the_odds.egg-info/requires.txt
+may_the_odds.egg-info/top_level.txt

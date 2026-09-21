@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "may-the-odds"
+version = "0.1.0"
+description = "A python text-based Hunger Games simulator"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Emma Cliffe"}
+]
+dependencies = [
+  "faker",
+  "adventurelib",
+  "rich",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/montana-rusa/may-the-odds"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
