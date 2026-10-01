@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/factories/tribute_factory.py
+src/may_the_odds.egg-info/PKG-INFO
+src/may_the_odds.egg-info/SOURCES.txt
+src/may_the_odds.egg-info/dependency_links.txt
+src/may_the_odds.egg-info/requires.txt
+src/may_the_odds.egg-info/top_level.txt
+src/models/tribute.py
