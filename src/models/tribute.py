@@ -3,8 +3,8 @@ class Tribute:
         self.name = name
         self.id = id
         self.gender = gender
-        self.age = age
         self.district = district
+        self.age = age
         self.speed = speed
         self.strength = strength
         self.personality = personality
