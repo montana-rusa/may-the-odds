@@ -15,6 +15,8 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
+from engine.game import Game
+
 TRIBUTES_FILE = "data\\tributes.json"
 
 def load_tributes(path: str = TRIBUTES_FILE) -> list[dict]:
@@ -66,6 +68,7 @@ def display_tributes(tributes: list[dict], console: Console, per_row: int = 4) -
 def main() -> None:
     console = Console()
     tributes = load_tributes()
+    game = Game()
 
     if not tributes:
         sys.exit("tributes.json is empty — nothing to assign.")
@@ -83,6 +86,14 @@ def main() -> None:
         f"[bold]You are [yellow]{player_tribute.get('name', 'Unknown Tribute')}[/yellow], from [yellow]District {player_tribute.get('district', 'unkown')}[/yellow][/bold]"
     )
     console.print()
+    while True:
+        answer = console.input("[bold]Type [yellow]Y[/yellow] and press [yellow]Enter[/yellow] to start: [/bold]")
+        if answer.strip().lower() == "y":
+            break
+    console.print()
+    game.start_game()
+    
+   
 
 
 if __name__ == "__main__":
